@@ -270,7 +270,7 @@ const Settings: React.FC<Props> = ({ me, mutate, error }) => {
                 {pwa?.canInstall && <List.Item key="install" actions={[<Form.Item>
                   <Button shape="round" icon={<MobileOutlined />} onClick={pwa?.install}>Install</Button>
                 </Form.Item>]}>
-                  <List.Item.Meta title={<Space><DownloadOutlined /><>Install App</></Space>} description="Install TeleDrive to your device" />
+                  <List.Item.Meta title={<Space><DownloadOutlined /><>Install App</></Space>} description="Install Drive to your device" />
                 </List.Item>}
 
                 <List.Item key="expandable-rows" actions={[<Form.Item name="expandable_rows">
@@ -487,12 +487,9 @@ const Settings: React.FC<Props> = ({ me, mutate, error }) => {
           </Typography.Paragraph>
         </li>
       </ul>
-      <Typography.Paragraph>
-        Note. Those features may have bugs please report them to <a href={emailLink()}>bug@teledriveapp.com</a> and you can always revoke from experimental features anytime.
-      </Typography.Paragraph>
 
       <Typography.Paragraph strong>
-        You need to be logged in again to TeleDrive. Continue?
+        You need to be logged in again to Drive. Continue?
       </Typography.Paragraph>
     </Modal>
   </>

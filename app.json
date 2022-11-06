@@ -1,20 +1,6 @@
 {
-  "name": "TeleDrive",
-  "description": "Free cloud storage via telegram",
-  "keywords": [
-    "cloud",
-    "drive",
-    "telegram",
-    "free",
-    "storage",
-    "unlimited"
-  ],
-  "website": "https://teledriveapp.com",
-  "repository": "https://github.com/mgilangjanuar/teledrive",
-
-  "addons": [
-    "heroku-postgresql"
-  ],
+  "name": "Drive",
+  "description": "Unlimited Cloud Storage",
   "env": {
     "ENV": {
       "description": "Hide the logs for production, default: develop. Read more at: https://teledriveapp.com/docs/Deployment/heroku",

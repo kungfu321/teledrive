@@ -1,8 +1,8 @@
 {
-  "name": "teledrive",
-  "productName": "TeleDrive",
+  "name": "drive",
+  "productName": "Drive",
   "version": "1.0.0",
-  "description": "Cloud Storage Service",
+  "description": "Unlimited Cloud Storage",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -10,18 +10,6 @@
     "package-win": "electron-packager . --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Teledrive\"",
     "package-linux": "electron-packager . --overwrite --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds",
     "create-installer-mac": "electron-installer-dmg ./release-builds/Electron\\ webview-darwin-x64/Electron\\ webview.app teledrive --out=release-builds --overwrite --icon=assets/icons/mac/icon.icns"
-  },
-  "repository": "https://github.com/mgilangjanuar/teledrive",
-  "keywords": [
-    "Cloud Storage",
-    "webview",
-    "app",
-    "storage"
-  ],
-  "author": "GitHub",
-  "license": "MIT",
-  "dependencies": {
-    "@electron/remote": "^2.0.0"
   },
   "devDependencies": {
     "electron": "^18.0.0",

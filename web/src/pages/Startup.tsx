@@ -33,7 +33,7 @@ const Startup: React.FC = () => {
           Welcome!
         </Typography.Title>
         <Typography.Paragraph type="secondary" style={{ fontSize: '14px' }}>
-          We'll redirect you to your TeleDrive application.
+          We'll redirect you to your Drive application.
         </Typography.Paragraph>
         <Form form={form} layout="vertical" onFinish={finish}>
           <Form.Item label="Web URL" name="baseUrl">

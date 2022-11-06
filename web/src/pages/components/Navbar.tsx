@@ -1,4 +1,4 @@
-import { DashboardOutlined, GithubOutlined, LoginOutlined, LogoutOutlined, MenuOutlined, SettingOutlined, UserOutlined, UserSwitchOutlined, WarningOutlined } from '@ant-design/icons'
+import { DashboardOutlined, LoginOutlined, LogoutOutlined, MenuOutlined, SettingOutlined, UserOutlined, UserSwitchOutlined, WarningOutlined } from '@ant-design/icons'
 import { Button, Checkbox, Form, Layout, Menu, Modal, Popover, Tag, Typography } from 'antd'
 import Avatar from 'antd/lib/avatar/avatar'
 import React, { useState } from 'react'
@@ -10,7 +10,6 @@ import { apiUrl, req } from '../../utils/Fetcher'
 interface Props {
   user?: any
 }
-
 
 const Navbar: React.FC<Props> = ({ user }) => {
   const history = useHistory()
@@ -63,7 +62,6 @@ const Navbar: React.FC<Props> = ({ user }) => {
         <Menu selectable={false} overflowedIndicator={<MenuOutlined />} mode="horizontal" triggerSubMenuAction="click" theme={currentTheme === 'dark' ? 'light' : 'dark'}
           style={{ background: currentTheme === 'dark' ? '#1f1f1f' : '#0088CC', position: 'relative', display: 'flex', justifyContent: 'right' }}>
           <Menu.Item onClick={() => history.push('/dashboard')} key="dashboard">Dashboard</Menu.Item>
-          <Menu.Item onClick={() => window.open('https://github.com/mgilangjanuar/teledrive', '_blank')} key="github" icon={<GithubOutlined />}>GitHub</Menu.Item>
         </Menu>
       </>}
     </Layout.Header>
