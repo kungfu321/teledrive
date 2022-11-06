@@ -302,7 +302,7 @@ const Dashboard: React.FC<PageProps & { me?: any, errorMe?: any }> = ({ match })
     try {
       await req.post('/files/sync', {}, {
         params: {
-          limit: 50,
+          limit: 500,
           parent_id: parent?.id || undefined
         }
       })
