@@ -504,7 +504,7 @@ const Dashboard: React.FC<PageProps & { me?: any, errorMe?: any }> = ({ match })
       cancelButtonProps={{ shape: 'round' }}
       okButtonProps={{ shape: 'round', loading: loadingSync }}>
         <Typography.Paragraph>
-          Are you sure to sync up to 50 files from your Upload Destination to the <code>{typeof parent?.name === 'string' ? parent.name : 'root'}</code> directory?
+          Are you sure to sync up to 500 files from your Upload Destination to the <code>{typeof parent?.name === 'string' ? parent.name : 'root'}</code> directory?
         </Typography.Paragraph>
       </Modal>
 
